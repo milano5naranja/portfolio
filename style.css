@@ -4,6 +4,20 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 576px) {
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    margin: 0;
+  }
+  .navigation-links {
+    margin-top: 40px;
+    justify-content: center;
+    display: block;
+  }
+}
+
 body {
   margin: 60px auto;
   max-width: 800px;
@@ -84,6 +98,7 @@ p {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 .primary-link {
@@ -94,8 +109,4 @@ p {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
-}
-
-.picture {
-  border-radius: 5px;
 }
